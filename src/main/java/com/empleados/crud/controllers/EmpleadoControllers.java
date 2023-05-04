@@ -19,6 +19,11 @@ public class EmpleadoControllers {
     @Autowired
     EmpleadoServices empleadoServices;
 
+    @PostMapping("/empleados")
+    public void crearEmpeladoModels(@RequesBody EmpleadoModels empleado) {
+        empleadoServices.crearEmpleados(empleado);
+    }
+
     @GetMapping()
     public ArrayList<EmpleadoModels> obtenerEmpleados() {
         return empleadoServices.obtenerEmpleados();

@@ -9,4 +9,5 @@ import com.empleados.crud.models.EmpleadoModels;
 
 public interface EmpleadoRepository extends CrudRepository<EmpleadoModels, Long> {
 
+    
 }
